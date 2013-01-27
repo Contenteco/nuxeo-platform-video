@@ -40,4 +40,9 @@ public class ThumbnailVideoFactory implements ThumbnailFactory {
         Blob thumbnailView = picResAdapter.getPictureFromTitle("Thumbnail");
         return thumbnailView;
     }
+
+    @Override
+    public Blob computeThumbnail(DocumentModel doc, CoreSession session) {
+        return null;
+    }
 }
